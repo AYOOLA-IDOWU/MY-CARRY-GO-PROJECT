@@ -1,0 +1,47 @@
+body{
+    margin-bottom: 66px;
+  }
+    .get{
+    border: none; border-radius: 12px;
+}
+.fix{
+    position: fixed;
+}
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: #ffc107 1px solid;
+  width: 100%;
+}
+
+button {
+  background-color: #ffc107 ;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 0.7px solid black;
+}

@@ -1,0 +1,35 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .go{
+      text-shadow: red 1px 2px 2px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  button {
+    background-color: #ffc107;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+  body{
+    margin-bottom: 40px;
+  }
+  input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 0.7px solid black;
+}
