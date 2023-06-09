@@ -49,3 +49,24 @@
         var editModal = new bootstrap.Modal(document.getElementById("editModal"));
         editModal.hide();
     }
+
+    var order=[]
+        
+    if (localStorage.every) {
+     order = JSON.parse(localStorage.getItem("every"));
+    }
+    const sub=()=>{
+    if(want.value=="" || pri.value=="" || clo.value=="" || col.value=="" || ent.value==""){
+    }else{
+    var item={
+      quantity: want.value,
+      price: pri.value,
+      size: clo.value,
+      color:col.value,
+      design: ent.value 
+    }
+    order.push(item)
+    console.log(order)
+    localStorage.setItem("every", JSON.stringify(order))
+}
+}

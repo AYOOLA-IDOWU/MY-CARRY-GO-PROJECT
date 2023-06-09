@@ -2,7 +2,7 @@ let user = JSON.parse(localStorage.getItem('user'))
 let currentUserIndex = localStorage.getItem('currentUserIndex')
 console.log(user[currentUserIndex]);
 if (user) {
-  currentUserName.innerHTML = `Hi, ${user[currentUserIndex].name}`
+  currentUserIndex.innerHTML = `Hi, ${user[currentUserIndex].name}`
 }
 const now=()=>{
   bod.innerHTML=`loading..... <br>  <img src="./image/d77bce75b53ed81f656be3f4249b372b.gif" alt="">`
@@ -99,16 +99,16 @@ function displayCart(){
    }
 }
 
-document.getElementById("search-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent form submission
+// document.getElementById("search-form").addEventListener("submit", function(event) {
+// //   event.preventDefault(); // Prevent form submission
 
-  var searchTerm = document.getElementById("search-input").value;
-  navigateToSearchResult(searchTerm);
-});
+// //   var searchTerm = document.getElementById("search-input").value;
+// //   navigateToSearchResult(searchTerm);
+// // });
 
-function navigateToSearchResult(searchTerm) {
-  window.location.href = "https://carrygo.com" + encodeURIComponent(searchTerm);
-}
+// // function navigateToSearchResult(searchTerm) {
+// //   window.location.href = "https://carrygo.com" + encodeURIComponent(searchTerm);
+// // }
 
      
 var quantity = [];
