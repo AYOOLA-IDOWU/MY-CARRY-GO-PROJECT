@@ -1,8 +1,10 @@
-let user = JSON.parse(localStorage.getItem('user'))
-let currentUserIndex = localStorage.getItem('currentUserIndex')
+let user = JSON.parse(localStorage.getItem('user'));
+let currentUserIndex = localStorage.getItem('currentUserIndex');
+let currentUserIndexElement = document.getElementById('currentUserIndex');
+
 console.log(user[currentUserIndex]);
-if (user) {
-  currentUserIndex.innerHTML = `Hi, ${user[currentUserIndex].name}`
+if (user && user[currentUserIndex] && user[currentUserIndex].name) {
+  currentUserIndexElement.innerHTML = `Hi, ${user[currentUserIndex].name}`;
 }
 const now=()=>{
   bod.innerHTML=`loading..... <br>  <img src="./image/d77bce75b53ed81f656be3f4249b372b.gif" alt="">`
